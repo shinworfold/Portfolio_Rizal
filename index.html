@@ -5,9 +5,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Portfolio | Rizal Maulana</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 	<!-- header -->
@@ -34,35 +35,38 @@
 	</header>
 	<!--bagian banner-->
 	<section class="banner">
+		<div class="bg">
 		<div class="container">
-			<div class="b-center">
-				<image src="img/foto.jpg">
-					<h2>¡Holla!...<br>
+			<div class="b-center" data-aos="fade-down" data-aos-offset="200" data-aos-delay="50">
+				<image src="img/foto.jpg" >
+					<h2 >¡Holla!...<br>
 					Saya adalah seorang <span class="efek-ngetik"></span></h2>
-					<p>Selamat datang diwebsite portofolio saya!</p>
+					<p >Selamat datang diwebsite portofolio saya!</p>
 			</div>
+		</div>
 		</div>
 	</section>	
 	<!-- bagian about -->
 	<section id="about">
-		<div class="container">
-			<h3>About</h3>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam ullam eos aspernatur architecto accusamus, impedit ut expedita quia, ipsa vel, beatae neque eum esse! Sapiente saepe animi aliquid sunt ut!</p>
-		<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit repellat molestiae ea aspernatur impedit vero vitae aperiam nulla libero, hic dolores ipsam facilis, dicta odio, reprehenderit deleniti magni quod omnis.</p>
-		<p>Lorem ipsum dolor sit, amet consectetur, adipisicing elit. Iste est, quia doloremque impedit fugit iure quasi nulla odit mollitia at voluptate nam error dolorum aut ipsa qui ipsum atque harum.</p>
+		<div class="container" data-aos="fade-up"
+		data-aos-duration="1000">
+			<h3 >About</h3>
+		<p>Hello! my name is Rizal Maulana, I am a student from Muthia Harapan Cicalengka vocational high school</p>
+		<p>I am 18 years old, live in Sumedang</p>
+		<p>I take part in front end developer</p>
 		</div>
 	</section>
 	<!-- bagian skill -->
-	<section id="skills">
-		<div class="container">
+	<section id="skills" >
+		<div class="container" data-aos="fade-down" data-aos-duration="1000" >
 			<h3>Skills</h3>
 			<h4>After effect</h4>
 			<div class="l-skill">
 				<span class="nilai ae">60%</span>
 			</div>
-			<h4>Html,css</h4>
+			<h4>Html,css,js</h4>
 			<div class="l-skill">
-				<span class="nilai gm">60%</span>
+				<span class="nilai hs">70%</span>
 			</div>
 			<h4>Photoshop</h4>
 			<div class="l-skill">
@@ -76,10 +80,10 @@
 	</section>
 	<!-- Bagian portfolio-->
 	<section id="portfolio">
-		<div class="container">
+		<div class="container" data-aos="fade-left" data-aos-duration="1000">
 			<h3>Portfolio</h3>
 			<div class="col-4">
-				<a href="#"> <img src="img/foto1.jpg" alt=""> <span>Bermain game</span>
+				<a href="#"> <img src="img/foto1.jpg" alt=""> <span>Fixing Pc/Phone</span>
 				</a>
 			</div>
 			<div class="col-4">
@@ -87,11 +91,11 @@
 				</a>
 			</div>
 			<div class="col-4">
-				<a href="#"> <img src="img/foto3.png" alt=""> <span>Edit montage game</span>
+				<a href="#"> <img src="img/foto3.png" alt=""> <span>Editing video</span>
 				</a>
 			</div>
 			<div class="col-4">
-				<a href="#"> <img src="img/foto4.png" alt=""> <span>Channel Youtube</span>
+				<a href="#"> <img src="img/foto4-.png" alt=""> <span>Landing Page Ui Design</span>
 				</a>
 			</div>
 
@@ -99,7 +103,7 @@
 	</section>
 	<!-- bagian about -->
 	<section id="contact">
-		<div class="container">
+		<div class="container" data-aos="flip-up" data-aos-duration="1000">
 			<h3>Contact</h3>
 			<div class="col-3">
 				<i class="fa-solid fa-location-dot"></i>
@@ -116,17 +120,23 @@
 				<h4>No hp/Wa</h4>
 				<p>089666666666</p>
 			</div>
+			<div class="col-3">
+				<i class="fab fa-instagram"></i>
+				<h4>Instagram</h4>
+				<a href="https://www.instagram.com/shinxnxx/"><p>@Shinxnxx</p></a>
+			</div>
 		</div>
 	</section>
 <!-- bagian about -->
 	<footer>
-		<div class="container">
+		<div class="container" >
 			<small>Copyright &copy; 2021 -Hiden Official</small>
 		</div>
 	</footer>
 
 
-
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="js/animate.js"></script>
+	<script>AOS.init();</script>
 </body>
 </html>

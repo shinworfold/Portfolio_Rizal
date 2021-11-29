@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   padding: 0;
   margin: 0;
   color: black;
@@ -7,11 +7,11 @@
 /* bagian header */
 
 header {
-  position: fixed;
+  position: unset;
   float: left;
   width: 100%;
   height: 70px;
-  background-color: #212121;
+  background-color: #181c26;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 header h1 {
@@ -100,7 +100,7 @@ a {
   left: -200px;
   width: 200px;
   background-color: black;
-  transition: 0.3s;
+  transition: 0.5s;
   z-index: 9999;
   color: white;
 }
@@ -131,8 +131,8 @@ a {
 }
 /* bagian banner */
 .banner {
-  background: linear-gradient(to top, white 0%, #88e0ef 50%);
-  padding: 150px 0;
+  background: #181c26;
+  padding: 180px 0;
 }
 .banner img {
   width: 150px;
@@ -145,7 +145,7 @@ a {
 .banner h2,
 .banner p,
 .banner span {
-  color: black;
+  color: white;
 }
 .banner h2 {
   margin-bottom: 10px;
@@ -163,7 +163,6 @@ section h3 {
   position: relative;
 }
 section h3::before {
-  content: "";
   display: block;
   position: absolute;
   bottom: 0px;
@@ -172,18 +171,18 @@ section h3::before {
   left: calc(50% - 60px);
 }
 section h3::after {
-  content: "";
   display: block;
   position: absolute;
   bottom: -1px;
   width: 40px;
   height: 4px;
-  background-color: #212121;
+  background-color: white;
   left: calc(50% - 20px);
 }
 
 /*Bagian about*/
 #about p {
+  padding: 50px;
   text-align: center;
   text-indent: 30px;
   line-height: 25px;
@@ -191,7 +190,7 @@ section h3::after {
 }
 /*Bagian skill*/
 #skills {
-  background: linear-gradient(to top, #88e0ef 0%, white 100%);
+  background: #181c26;
 }
 #skills .l-skill {
   height: 30px;
@@ -202,6 +201,11 @@ section h3::after {
 }
 .l-skill {
   border-radius: 40px;
+  font-size: 19px;
+}
+#skills h4,
+#skills h3 {
+  color: white;
 }
 .l-skill .nilai {
   height: 30px;
@@ -216,8 +220,8 @@ section h3::after {
 .ae:hover {
   width: 60%;
 }
-.gm:hover {
-  width: 60%;
+.hs:hover {
+  width: 70%;
 }
 .ps:hover {
   width: 60%;
@@ -228,7 +232,7 @@ section h3::after {
 
 /* bagian portfolio */
 #portfolio {
-  background: linear-gradient(to top, white 0%, #88e0ef 50%);
+  background: white;
 }
 .col-4 {
   width: 80%;
@@ -241,7 +245,7 @@ section h3::after {
   float: left;
   text-align: center;
   margin-bottom: 15px;
-  letter-spacing: 5px;
+  letter-spacing: 1px;
 }
 .col-4 img {
   width: 100%;
@@ -254,10 +258,10 @@ section h3::after {
 
 /* bagian contact */
 #contact {
-  background: linear-gradient(to top, #88e0ef 0%, white 104%);
+  background: white;
 }
 .col-3 {
-  width: 33.33%;
+  width: calc(100% / 2);
   box-sizing: border-box;
   float: left;
   text-align: center;
@@ -271,13 +275,16 @@ section h3::after {
 /* bagian footer */
 
 footer {
-  background-color: #88e0ef;
-  padding: 50px;
+  background-color: #181c26;
+  padding: 30px;
   text-align: center;
 }
 footer small {
-  color: black;
+  color: white;
 }
 html {
   scroll-behavior: smooth;
+}
+.bg {
+  color: #212121;
 }
